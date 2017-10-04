@@ -129,7 +129,9 @@ namespace TSMS
                         ShowData();
                     }
                     else
-                    { 
+                    {
+                        Lblmessage.ForeColor = System.Drawing.Color.Maroon;
+                        Lblmessage.Text = "Complete your task first";
                         Button del_btn = GridView1.Rows[e.RowIndex].FindControl("btn_Delete") as Button;
                         del_btn.Enabled = false;
                     }

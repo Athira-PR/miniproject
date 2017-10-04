@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="form1">
+    <div class="FormStyle">
         <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Comic Sans MS" Font-Size="Larger" Font-Underline="True" ForeColor="#990000" Text="Add Your Task"></asp:Label><br /><br />
         <asp:Label ID="lblname" runat="server" Text="Task Name:"></asp:Label><br />
         <asp:TextBox ID="txtname" runat="server" Width="250px"></asp:TextBox>

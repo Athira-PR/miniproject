@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="form1">
+    <div class="FormStyle">
         <asp:Label ID="LblEmail" runat="server" Text="Enter Your Email address"></asp:Label><br /><br />
         <asp:TextBox ID="txtEmail" runat="server" Width="300px"></asp:TextBox><br /><br />
         <asp:Label ID="LblMessage" runat="server" Text=""></asp:Label><br /><br />

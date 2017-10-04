@@ -17,12 +17,12 @@ namespace TSMS
         {
             get
             {
-                var LblUserName = (Label)lvUserInfo.FindControl("LblUserName");
+                var LblUserName = (Label)LoginView.FindControl("LblUserName");
                 return LblUserName;
             }
             set
             {
-                var LblUserName = (Label)lvUserInfo.FindControl("LblUserName");
+                var LblUserName = (Label)LoginView.FindControl("LblUserName");
                 LblUserName = value;
             }
         }

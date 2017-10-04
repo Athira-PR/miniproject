@@ -2,14 +2,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="float:none" class="form1">
+    <div style="float:none" class="FormStyle">
       <asp:Label ID="Label1" runat="server" Text="Add Your Tasks" Font-Bold="True" Font-Italic="True" Font-Names="Segoe Script" Font-Size="X-Large" ForeColor="Maroon"></asp:Label><br />
       <asp:ImageButton ID="ImageButton1" ImageUrl="~/images/add.png" Width="50" Height="50" runat="server" OnClick="ImageButton1_Click" /><br /><br />
       <asp:Label ID="Label2" runat="server" Text="Log Your Tasks" Font-Bold="True" Font-Italic="True" Font-Names="Segoe Script" Font-Size="X-Large" ForeColor="Maroon"></asp:Label><br />
       <asp:ImageButton ID="ImageButton2" ImageUrl="~/images/log.png" Width="50" Height="50" runat="server" OnClick="ImageButton2_Click" /><br /><br />
     </div>
-    <div class="gridStyle">      
+   
+    <div class="GridStyle">      
         <br /><br /><br /><br /><br />
+         <asp:Label ID="Lblmessage" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="MV Boli" Font-Size="Larger"></asp:Label>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="6" OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" OnRowDeleting="GridView1_RowDeleting" HorizontalAlign="Center" VerticalAlign="Bottom" CellSpacing="5" Width="1000px" >  
         <Columns>
             <asp:TemplateField>
@@ -69,10 +71,10 @@
                  </ItemTemplate>  
              </asp:TemplateField>  
         </Columns>  
-        <HeaderStyle BackColor="#663300" ForeColor="#ffffff"/>  
-        <RowStyle BackColor="#e7ceb6" Height="50px" Width="550px"/>  
-        </asp:GridView>  
+        </asp:GridView>
+          
     </div>
+    
 </asp:Content>
 
 

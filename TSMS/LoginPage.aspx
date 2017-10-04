@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="stylesheet.css" rel="stylesheet" />
     <div class="wrapper"> 
-        <div class="form1">  
+        <div class="FormStyle">  
             <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="X-Large" Font-Underline="True" ForeColor="#663300" Text="LOGIN"></asp:Label><br /><br />
             <asp:Label ID="LblValidation" runat="server" ForeColor="#FF3300"></asp:Label><br /><br />
             <asp:Label ID="lblusername" runat="server" Text="User Name"></asp:Label><br />

@@ -7,7 +7,7 @@
         <asp:Label ID="Label1" runat="server" Text="Choose Your Task" Font-Italic="True" Font-Names="MV Boli" Font-Size="Large" ForeColor="Maroon" Font-Bold="True"></asp:Label><br /><br /><br />
         <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="true" Width="300px" BackColor="#663300" ForeColor="#e7ceb6"></asp:DropDownList>
     </div><br /><br /><br /><br /><br />
-    <div class="gridStyle">      
+    <div class="GridStyle">      
        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="6" OnRowCancelingEdit="GridView1_RowCancelingEdit"  OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" HorizontalAlign="Center" VerticalAlign="Middle" Width="1000px">    
             <Columns>  
                 <asp:TemplateField>  
@@ -53,8 +53,6 @@
                     </EditItemTemplate>  
                 </asp:TemplateField>  
             </Columns>  
-            <HeaderStyle BackColor="#663300" ForeColor="#ffffff" Height="20px" />  
-            <RowStyle BackColor="#e7ceb6" Height="50px" Width="500px"/>  
-        </asp:GridView>  
+         </asp:GridView>  
     </div>  
 </asp:Content>

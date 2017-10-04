@@ -14,28 +14,21 @@
 </head>
 <body >
    <form runat="server" >
-        <nav class="navclass" > 
-
+        <nav class="NavStyle" >
             <div class="container-fluid" >
-                
-                     <asp:LoginView runat="server" ViewStateMode="Disabled" ID="lvUserInfo">
+                <asp:LoginView runat="server" ViewStateMode="Disabled" ID="LoginView">
                        <AnonymousTemplate>
-                           <p id="text">TIME SHEET MANAGEMENT SYSTEM</p>
+                           <p id="TextStyle">TIME SHEET MANAGEMENT SYSTEM</p>
                             <asp:Image ID="Image1" runat="server" ImageUrl="images/clock.jpg" Height="50px" />
                             <ul class="nav navbar-nav navbar-right">
                                <li><a runat="server" href="Public/ContactPage.aspx">Contact</a></li>
                              </ul>
-                           
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
+                       </AnonymousTemplate>
+                       <LoggedInTemplate>
+                            <asp:Image ID="Image1" runat="server" ImageUrl="images/clock.jpg" Height="50px"/>
                             <ul class="nav navbar-nav navbar-left ">
-                                <asp:Image ID="Image1" runat="server" ImageUrl="images/clock.jpg" Height="50px"/>
                                 <li><a runat="server" href="HomePage.aspx">Home</a></li>
-                                
-                               
-                               
                             </ul>
-                             
                             <ul class="nav navbar-nav navbar-right ">
                                 <li><asp:Label ID="Lblwelcome" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="#EADAC8">Hello:</asp:Label></li>
                                 <li><asp:Label ID="LblUserName" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="#EADAC8"></asp:Label></li>
@@ -43,18 +36,13 @@
                                     <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="BtnLogout_Click" BorderStyle="Ridge" Font-Bold="True" Font-Size="Larger" ForeColor="#CC6600" />
                                 </li>
                             </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                    
-                </div>
-            </nav>
-
-      
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            
-        </asp:ContentPlaceHolder>
-   
-</form>    
+                      </LoggedInTemplate>
+                  </asp:LoginView>
+              </div>
+         </nav>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>    
     <script src="scripts/jquery-1.9.1.js"></script>
 </body>
 </html>

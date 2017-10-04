@@ -7,7 +7,7 @@
   
  }
 
- .form1 {
+ .FormStyle {
    max-width: 380px;
    padding: 15px 35px 45px;
    margin: 0 auto;          
@@ -18,15 +18,11 @@
    float:none;
                  
 }
- .sucess{
-   max-width: 500px;
-   padding: 15px 35px 45px;
-   margin: 0 auto; 
-   align-content:center;
-    box-sizing: border-box;
-    float:right;
- }
-.navclass
+ body {
+    background-image: url('images/b.jpg');
+
+}
+.NavStyle
 {
   background-color:#663300;
   position: relative;
@@ -34,21 +30,13 @@
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
-#text{
+#TextStyle{
     color:white;
     align-content:center;
     font-family:serif;
     font-size:xx-large;
     font-style:oblique;
     display:inline;
-    
- 
- 
-}
-
-body {
-    background-image: url('images/b.jpg');
-
 }
 ul{  
   
@@ -57,20 +45,18 @@ ul{
 li a {  
     color: #F1FAEE;  
 font-size: 30px;  
-/*column-width: 140px;*/ 
-    }  
-    li  
-   {  
+
+}  
+li {  
     display: inline;  
     padding-left: 2px;  
-    /*column-width: 190px;*/  
-   }  
-   a{  
+}  
+a{  
  text-decoration: none;  
  margin-left:20px  
-    }  
+}  
    
-.gridStyle{
+.GridStyle {
     font-size:medium;
     padding:8px;
     align-content:center;
@@ -78,4 +64,22 @@ font-size: 30px;
     width:100%;
      
 }
+.GridStyle th{
+    background-color:#663300;
+    color:#e7ceb6;
+    text-align:center;
+}
+.GridStyle tr{
+    background-color:#e7ceb6;
+    Height:50px;
+    Width:550px;
+}
+ .sucess{
+   max-width: 500px;
+   padding: 15px 35px 45px;
+   margin: 0 auto; 
+   align-content:center;
+   box-sizing: border-box;
+   float:right;
+ }
 

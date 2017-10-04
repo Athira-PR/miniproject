@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="form1">
+    <div class="FormStyle">
         <asp:Panel ID="Panel1" runat="server" DefaultButton="btnSubmit">
             <p>
                 <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Segoe Script" Font-Size="Large" ForeColor="#990000" Text="Please Fill Following to send mail..."></asp:Label>
