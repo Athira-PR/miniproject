@@ -138,6 +138,7 @@
     </Content>
     <Content Include="MasterPage2.Master" />
     <Content Include="Public\ContactPage.aspx" />
+    <Content Include="Public\ResetPassword.aspx" />
     <Content Include="Public\Web.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -265,6 +266,13 @@
     </Compile>
     <Compile Include="Public\RegisterPage.aspx.designer.cs">
       <DependentUpon>RegisterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

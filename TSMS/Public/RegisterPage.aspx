@@ -20,7 +20,7 @@
            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtPassword" ErrorMessage="password is required" ForeColor="Red"></asp:RequiredFieldValidator><br />
            <asp:Label ID="lblcpwd" runat="server" Text="Confirm Password:"></asp:Label><br />
            <asp:TextBox ID="txtCPassword" runat="server" TextMode="Password" Width="250px"></asp:TextBox>
-           <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtPassword" ErrorMessage="This can't be blank" ForeColor="Red"></asp:RequiredFieldValidator>
+           <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtCPassword" ErrorMessage="This can't be blank" ForeColor="Red"></asp:RequiredFieldValidator>
            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtPassword" ControlToValidate="txtCPassword" ErrorMessage="Passwords do not match" ForeColor="#009900"></asp:CompareValidator><br />
            <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" BackColor="#FFCC99" Font-Bold="True" Font-Size="Medium" float="right"/><br /><br />
            <a href="../LoginPage.aspx">Sign in</a>

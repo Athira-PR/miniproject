@@ -59,7 +59,7 @@ namespace TSMS
                     string subject = "Password Recovery";
                     string body = "User Name: " +UserName+ "\n";
                     body += "Email: " + txtEmail.Text + "\n";
-                    body += "Your Password is: " + Password + "\n";
+                    body += "Reset Password using:http://localhost:64835/(S(t1erno2gmfzqtgbrldb50w0l))/Public/ResetPassword.aspx " + "\n";
                     body += "Thank you...";
 
                     // smtp settings
@@ -74,7 +74,7 @@ namespace TSMS
                     smtp.Send(fromAddress, toAddress, subject, body);
                 }
                 LblMessage.ForeColor = System.Drawing.Color.Green;
-                LblMessage.Text = "Password has been send to your email";
+                LblMessage.Text = "Reset password link has been send to your email.please check your mail...";
 
             }
             else

@@ -10,7 +10,7 @@
     </div>
     <div class="gridStyle">      
         <br /><br /><br /><br /><br />
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="6" OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" OnRowDeleting="GridView1_RowDeleting" HorizontalAlign="Center" VerticalAlign="Bottom" CellSpacing="5" >  
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="6" OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" OnRowDeleting="GridView1_RowDeleting" HorizontalAlign="Center" VerticalAlign="Bottom" CellSpacing="5" Width="1000px" >  
         <Columns>
             <asp:TemplateField>
                 <ItemTemplate>
