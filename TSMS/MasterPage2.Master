@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage2.master.cs" Inherits="TSMS.MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="stylesheet.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+   
+    
+</head>
+<body >
+   <form runat="server" >
+        <nav class="navclass" > 
+
+            <div class="container-fluid" >
+                
+                     <asp:LoginView runat="server" ViewStateMode="Disabled" ID="lvUserInfo">
+                       <AnonymousTemplate>
+                           <p id="text">TIME SHEET MANAGEMENT SYSTEM</p>
+                            <asp:Image ID="Image1" runat="server" ImageUrl="images/clock.jpg" Height="50px" />
+                            <ul class="nav navbar-nav navbar-right">
+                               <li><a runat="server" href="Public/ContactPage.aspx">Contact</a></li>
+                             </ul>
+                           
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-left ">
+                                <asp:Image ID="Image1" runat="server" ImageUrl="images/clock.jpg" Height="50px"/>
+                                <li><a runat="server" href="HomePage.aspx">Home</a></li>
+                                
+                               
+                               
+                            </ul>
+                             
+                            <ul class="nav navbar-nav navbar-right ">
+                                <li><asp:Label ID="Lblwelcome" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="#EADAC8">Hello:</asp:Label></li>
+                                <li><asp:Label ID="LblUserName" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="#EADAC8"></asp:Label></li>
+                                <li>
+                                    <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="BtnLogout_Click" BorderStyle="Ridge" Font-Bold="True" Font-Size="Larger" ForeColor="#CC6600" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                    
+                </div>
+            </nav>
+
+      
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+   
+</form>    
+    <script src="scripts/jquery-1.9.1.js"></script>
+</body>
+</html>
+
