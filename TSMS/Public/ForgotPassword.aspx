@@ -6,6 +6,6 @@
         <asp:Label ID="LblEmail" runat="server" Text="Enter Your Email address"></asp:Label><br /><br />
         <asp:TextBox ID="txtEmail" runat="server" Width="300px"></asp:TextBox><br /><br />
         <asp:Label ID="LblMessage" runat="server" Text=""></asp:Label><br /><br />
-        <asp:Button ID="btnSend" runat="server" Text="Send" OnClick="btnSend_Click" />
+        <asp:Button ID="btnSend" runat="server" Text="Send" OnClick="btnSend_Click" BackColor="#FFCC99" Font-Bold="True" Font-Size="Medium" float="right" />
     </div>
 </asp:Content>

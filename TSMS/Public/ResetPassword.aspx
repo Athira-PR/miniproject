@@ -16,7 +16,7 @@
         <asp:TextBox ID="txtcpass" runat="server" Width="250px" TextMode="Password"></asp:TextBox>
         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtnewpass" ControlToValidate="txtcpass" ErrorMessage="Passwords do not match" ForeColor="#009933"></asp:CompareValidator>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtcpass" ErrorMessage="cant be blank" ForeColor="Red"></asp:RequiredFieldValidator><br /><br />
-        <asp:Button ID="btnReset" runat="server" Text="Reset" OnClick="btnReset_Click" /><br /><br />
+        <asp:Button ID="btnReset" runat="server" Text="Reset" OnClick="btnReset_Click" BackColor="#FFCC99" Font-Bold="True" Font-Size="Medium" float="right" /><br /><br />
         <asp:Label ID="Lblmessege" runat="server" Text=""></asp:Label><br /><br />
         <a href="../LoginPage.aspx">Back to Login...</a>
     </div>

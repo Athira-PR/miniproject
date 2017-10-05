@@ -22,7 +22,7 @@
                 <asp:TextBox ID="Comments" runat="server" TextMode="MultiLine" Rows="10" Width="300px" />
             </p>
             <p>
-                <asp:Button ID="btnSubmit" runat="server" Text="Send" OnClick="btnSubmit_Click" ValidationGroup="save" />
+                <asp:Button ID="btnSubmit" runat="server" Text="Send" OnClick="btnSubmit_Click" ValidationGroup="save" BackColor="#FFCC99" Font-Bold="True" Font-Size="Medium" float="right" />
             </p>
         </asp:Panel>
         <p>
